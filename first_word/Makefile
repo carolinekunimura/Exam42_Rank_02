@@ -25,6 +25,9 @@ test:
 
 	./$(NAME) "   " | cat -e
 
-	./$(NAME) a" "b" | cat -e
+	./$(NAME) "a" "b" | cat -e
 
 	./$(NAME) "  lorem,ipsum  " | cat -e
+
+fclean: 
+	rm -f $(NAME)
