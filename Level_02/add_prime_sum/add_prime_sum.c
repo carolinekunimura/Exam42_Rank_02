@@ -6,7 +6,7 @@
 /*   By: ckunimur <ckunimur@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:32:08 by ckunimur          #+#    #+#             */
-/*   Updated: 2023/06/30 19:21:42 by ckunimur         ###   ########.fr       */
+/*   Updated: 2023/07/03 18:22:14 by ckunimur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	is_prime(int num)
 void	ft_putnbr(int n)
 {
 	if (n >= 10)
-		ft_putnbr(n);
+		ft_putnbr(n / 10);
 	char digit = n % 10 + '0';
 	write (1, &digit, 1);
 }
